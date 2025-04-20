@@ -99,7 +99,7 @@ for prompt in llm_generated_prompts:
     chunks_list.append(relevant_chunks)
 
 
-""" Step 4. Filter out all unique chunks(Remove duplicates) """
+""" Step 4. Ranking Relevant Chunks """
 doc_scores = {}
 k = 60 # k: A constant used for smoothing the reciprocal rank values
 
